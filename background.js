@@ -10,7 +10,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     } else if (changeInfo.pinned === false && pinnedUrls.indexOf(url) >= 0) {
       pinnedUrls.splice(pinnedUrls.indexOf(url), 1);
     }
-    console.log(pinnedUrls);
   }
 
   if (pinnedUrls.indexOf(url) != -1) {
